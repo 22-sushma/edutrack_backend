@@ -1,0 +1,5 @@
+exports.paginate = (page = 1, pageSize = 25) => {
+  const offset = (page - 1) * pageSize;
+  const limit = pageSize;
+  return { offset, limit };
+};
